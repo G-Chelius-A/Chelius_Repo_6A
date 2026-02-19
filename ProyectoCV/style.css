@@ -1,0 +1,69 @@
+.navbar {
+    padding: 2rem;
+    background-color: rgb(73, 124, 213);
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width:768px){
+    .navbar-brand {
+        display: none;
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1 {
+    font-family: "Rationale", sans-serif;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-size: 1.5rem;
+}
+
+
+.hero {
+    background-color: white;
+    min-height: 450px;
+    text-align: center;
+}
+
+
+.hero-principal {
+    padding: 3rem
+}
+
+
+.hero-imagen-desarrollador {
+    width: 200px;
+    height: 200px;
+    margin:20px;
+}
+
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color:chocolate;
+}
+
+
+@media screen and (min-width:500px){
+    .hero-inferior-imagen{
+        width:400px;
+    }
+}
+
+
+
