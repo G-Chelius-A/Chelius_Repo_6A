@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Materialize</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    
+    <!--Añadiendo Materialize CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Íconos-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+     <link rel="stylesheet" href="styles.css" type="text/css">
+
+</head>
+<body>
+    <nav>
+    <div class="nav-wrapper teal ligthen-2">
+      <a class="brand-logo"><img src="logo.png" alt="logotipo" height="40px"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#grid">Grid System</a></li>
+        <li><a href="#form">Formulario</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container">
+
+        <div class="hero">
+            <h1>Bienvenido a Materialize CSS</h1>
+            <div id="heroimage"> </div>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut sit repellat obcaecati enim veritatis quas neque perferendis, architecto esse eos amet. Nesciunt eius voluptates temporibus! Eius sint explicabo maiores!</p>
+        </div>
+
+    <div id="grid">
+        <h2>Ejemplo del Grid System</h2>
+        <div class="row">
+            <div class="col s12 m12 columna">
+                <p>Fila de 12 columnas.</p>
+            </div>            
+        </div>
+
+        <div class="row">
+            <div class="col s6 m4 columna">
+                <p> Casilla 1 </p>
+            </div>
+            <div class="col s6 m8 columna">
+                <p> Casilla 2 </p>
+            </div>
+        </div>
+
+    </div>
+        <div class="row" id="form">
+            <h2>Formulario</h2>
+            <div class="col s12 m8" id="form">
+                <div class="row">
+                    <div class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                        <i class="material-icons prefix">textsms</i>
+                        <input type="text" id="autocomplete-input" class="autocomplete">
+                        <label for="autocomplete-input">Nombre</label>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <p>Rol:</p>
+                    <form action="#">
+                        <p>
+                        <label>
+                            <input name="group1" type="radio" checked />
+                            <span>Estudiante</span>
+                        </label>
+                        </p>
+                        <p>
+                        <label>
+                            <input name="group1" type="radio" />
+                            <span>Profesor</span>
+                        </label>
+                        </p>
+                        <p>
+                        <label>
+                            <input class="with-gap" name="group1" type="radio"  />
+                            <span>Otro</span>
+                        </label>
+                        </p>
+                    </form>
+            </div>
+
+            <div class="col s12 m4">
+
+            <form action="#">
+                <p>
+                <label>
+                    <input type="checkbox" />
+                    <span>De acuerdo con términos y condiciones</span>
+                </label>
+                </p>
+                <p>
+                <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>Deseo recibir notificaciones</span>
+                </label>
+                </p>
+            </form>
+
+            <a class="waves-effect waves-light btn">Enviar</a>
+            </div>
+        </div>
+
+
+          <div class="row">
+            <div class="col s12 m7">
+            <div class="card">
+                <div class="card-image">
+                <img src="avenger.jpg">
+                <span class="card-title">Película</span>
+                </div>
+                <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+            <footer>
+            <h4>Sígueme en mis redes sociales</h4>
+
+                <div class="collection">
+                <a href="https://facebook.com/" class="collection-item" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://instagram.com/" class="collection-item" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://github.com/" class="collection-item" target="_blank" rel="noopener noreferrer">GitHub</a>
+                 </div>
+
+                 <p>© 2026 Materialize CSS. Todos los derechos reservados.</p>
+                 <p>Hecho por: Gerardo Chelius</p>
+        </footer>
+
+    <!--Script Materialize CSS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
