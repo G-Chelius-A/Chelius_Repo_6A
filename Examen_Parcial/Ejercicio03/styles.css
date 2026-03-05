@@ -1,0 +1,30 @@
+/*
+Agrega en cada selector las reglas necesarias para obtener el resultado esperado
+según las instrucciones y la imágen muestra.
+*/
+
+*{
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    background-color: #EDEEEE;
+    color: orange;
+    border-bottom: 3px solid #4caf50;
+    padding: 30px;
+}
+#galeria {
+    display: flex;
+    max-width: 500px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#galeria img {
+    float: left;
+    padding: 1.2em;
+}
+#galeria img:hover{
+    background-color: #e8f1f4;
+}
