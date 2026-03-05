@@ -20,8 +20,11 @@ ul li a {
     background-color: black;
     padding: 10px 5px 10px 5px;
     border-right: 1px solid #336699;
-    float: left;
     display: block;
+}
+
+ul li {
+    float: left;
 }
 
 ul li a:hover{
