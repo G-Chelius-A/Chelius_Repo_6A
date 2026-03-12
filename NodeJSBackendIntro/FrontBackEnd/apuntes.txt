@@ -1,0 +1,7 @@
+Se utiliza CORS y Express. Cors es un gestor de peticiones AJAX o Fetch.
+
+Comando: npm install --save express cors
+--save lo guarda únicamente en el proyecto, como FrontBack o, en su defecto, NodeJSBackEndIntro.
+
+npm install --save-dev nodemon
+
