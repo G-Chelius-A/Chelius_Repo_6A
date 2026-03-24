@@ -1,0 +1,67 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+background: #2a909b;
+background: linear-gradient(90deg, rgba(42, 144, 155, 1) 0%, rgba(91, 199, 87, 1) 61%, rgba(186, 237, 83, 1) 100%);
+margin:0;
+padding:30px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+text-align:center;
+}
+
+form{
+margin-bottom:30px;
+}
+
+input,select{
+width:100%;
+padding:8px;
+margin-top:5px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.checkbox-group{
+display:flex;
+gap:15px;
+}
+
+button{
+padding:10px 20px;
+background:#008461;
+border:none;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#27d11e;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:10px;
+border-bottom:1px solid #ddd;
+text-align:left;
+}
+
+tr:hover{
+background:#f1f1f1;
+cursor:pointer;
+}

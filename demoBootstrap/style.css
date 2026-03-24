@@ -5,6 +5,7 @@ body {
 .navbar{
     padding: 2rem;
     background-color:red;
+    text-transform: capitalize;
 }
 
 .navbar-collapse{
