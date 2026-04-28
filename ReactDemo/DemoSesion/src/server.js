@@ -21,18 +21,20 @@ app.post('/login', (req, res) => {
 
      // Fake validation
     if(username === "admin" && password === "12345"){
+        console.log("Login exitoso");
         const token = jwt.sign({ username }, SECRET, { expiresIn: '1h' });
         res.cookie("token", token, { 
             httpOnly: true, 
             secure: false,
             sameSite: "strict",
             maxAge: 3600000
-        });
+        }); //sameSite: "lax", "strict", "none"
         return res.json({
             message: "Login exitoso"
         })
         console.log();
     }
+    console.log("Login fallido");
     return res.status(401).json({
         message: "Credenciales inválidas"
     })
