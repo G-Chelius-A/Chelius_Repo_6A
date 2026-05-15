@@ -2,19 +2,9 @@
 
 ¡Bienvenido! Este es el repositorio oficial del curso de **Desarrollo de Aplicaciones Web** del 6°A de la Universidad Cristóbal Colón. **Semestre enero-junio 2026**.
 
-## 📊 Composición del Repositorio
-
-```
-JavaScript  35.3% ████████
-Vue         22.3% █████
-HTML        20.0% █████
-CSS         19.4% █████
-TypeScript   3.0% █
-```
-
 ---
 
-## 📁 Estructura - Ordinario (37 Tareas)
+## 📁 Estructura - Ordinario
 
 ```
 Ordinario/
