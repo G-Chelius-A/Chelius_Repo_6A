@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap');
+
+:root {
+  --text: #e2e8f0;
+  --text-h: #f8fafc;
+  --bg: #0f172a;
+  --bg-glass: rgba(30, 41, 59, 0.7);
+  --border: rgba(255, 255, 255, 0.1);
+  --accent: #a855f7;
+  --accent-hover: #c084fc;
+  --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --heading: 'Outfit', 'Inter', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  background-image: radial-gradient(circle at 50% -20%, #3b0764, var(--bg) 60%);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: var(--sans);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.glass-card {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px 0 rgba(168, 85, 247, 0.2);
+  border-color: rgba(168, 85, 247, 0.4);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), #7e22ce);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--sans);
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--accent-hover), #9333ea);
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+}
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+.btn-danger {
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+}
+.btn-danger:hover {
+  background: linear-gradient(135deg, #f87171, #dc2626);
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+}
+
+.input-field {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: var(--text-h);
+  font-family: var(--sans);
+  transition: all 0.3s ease;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+.input-field:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.2);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+  padding: 1rem;
+  background: var(--bg-glass);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  justify-content: center;
+}
+
+.nav-bar a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+.nav-bar a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--accent-hover);
+}
+
+h1, h2, h3 {
+  color: var(--text-h);
+  font-family: var(--heading);
+  margin-top: 0;
+}
+
+.exercise-img {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  background: rgba(255,255,255,0.05);
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  background: linear-gradient(to right, #e2e8f0, var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.info-text {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+.info-text strong {
+  color: var(--text-h);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

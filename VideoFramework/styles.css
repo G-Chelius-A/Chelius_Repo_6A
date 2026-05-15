@@ -1,0 +1,57 @@
+#heroimage{
+    background-image: url(doom.png);
+    background-size: cover;
+    background-position:right;
+    height: 40vh;
+    border-radius: 30px;
+    box-shadow: 0 20px 30px gray;
+}
+
+.brand-logo {
+    left: 20px;
+    top: 10%
+}
+
+#hero {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1 {
+    font-size: 30px;
+    color: darkblue;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    color:darkblue;
+}
+
+h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.intro p {
+    text-align: justify;
+}
+
+.columna {
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+footer {
+    background: lightgray;
+    padding: 5px 10% 5px 10%;
+}
+
+footer p {
+    text-align: center;
+    font-style: italic;
+}

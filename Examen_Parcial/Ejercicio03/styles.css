@@ -4,7 +4,7 @@ según las instrucciones y la imágen muestra.
 */
 
 *{
-    margin: 0 auto;
+    margin: 0;
 }
 h1{
     text-align: center;
@@ -14,9 +14,7 @@ h1{
     padding: 30px;
 }
 #galeria {
-    display: flex;
     max-width: 500px;
-    flex-wrap: wrap;
     align-items: center;
     margin: 0 auto;
 }
