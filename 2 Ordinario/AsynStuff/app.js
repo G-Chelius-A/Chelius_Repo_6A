@@ -152,6 +152,7 @@ function createCard(pokemon){
             <p class="card-text">
                 Tipo: ${pokemon.types.map(t => t.type.name).join(", ")}
             </p>
+        </div>
     </div>
     `;
     contenedor.appendChild(col);
